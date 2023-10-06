@@ -1,0 +1,193 @@
+/* CUSTOM FONTS */
+
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url(assets/fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+/* GENERAL STYLING FORMATTING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-bg {
+    background: url(assets/images/illustration-sign-up-mobile.svg) no-repeat center center / cover;
+    height: 284px;
+    border-radius: 0 0 20px 20px;
+}
+
+.bottom-area {
+    padding: 10% 5%;
+    margin: auto;
+}
+
+header {
+    font-size: 2.55em;
+    font-family: 'Roboto-bold', sans-serif;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Roboto-regular', sans-serif;
+    font-size: 1.15em;
+}
+
+ul {
+    margin: 30px auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.mail-valid-container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto-bold';
+}
+
+.error {
+    color: hsl(4, 100%, 67%);
+}
+
+input[type="text"] {
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+    margin: 10px auto;
+    color: hsl(235, 18%, 26%);
+    font-size: 1.1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 1.1em;
+    margin: 10px auto;
+}
+
+.success-page {
+    padding: 150px 25px 40px;
+
+}
+
+#success-mark {
+    height: 52.5px;
+    width: 52.5px;
+    margin-bottom: 25px;
+}
+
+#email-inner {
+    font-family: 'Roboto-bold';
+}
+
+#success-text {
+    line-height: 1.7;
+}
+
+#dismiss {
+    margin-top: 270px;
+    border: none;
+}
+
+.success-page #dismiss:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0 1rem 0 hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (min-width: 700px) {
+    body {
+        background-color: hsl(234, 29%, 20%);
+        font-size: 0.9em;
+    }
+
+    .first-page {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: row-reverse;
+        padding: 20px;
+        width: 90%;
+        max-width: 900px;
+        height: 640px;
+        border-radius: 20px;
+    }
+
+    .top-bg,
+    .bottom-area {
+        margin: 0;
+    }
+
+    .top-bg {
+        background: url(assets/images/illustration-sign-up-desktop.svg) no-repeat center center / cover;
+        height: 595px;
+        border-radius: 20px;
+        flex-basis: 45%;
+    }
+
+    .bottom-area {
+        flex: 55%;
+    }
+
+    #email {
+        background-color:#ffe7e6;
+        color: hsl(4, 100%, 67%);
+    }
+
+    .success-page {
+        width: 400px;
+        border-radius: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 30px 40px;
+    }
+
+    #dismiss {
+        margin-top: 30px;
+    }
+
+    .hide {
+        display: none;
+    }
+}
